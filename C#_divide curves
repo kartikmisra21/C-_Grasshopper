@@ -1,0 +1,18 @@
+List<Line> ln = new List<Line>();
+    Point3d[] pt = new Point3d[0];
+    Point3d[] pt1 = new Point3d[0];
+    crvA.DivideByCount(divs, true, out pt);
+    crvB.DivideByCount(divs, true, out pt1);
+    for(int i = 0; i < pt.Length; i++){
+
+
+
+
+
+      Line l = new Line(pt1[i], pt[i]);
+      ln.Add(l);
+    }
+
+    A = pt;
+    B = pt1;
+    C = ln;
